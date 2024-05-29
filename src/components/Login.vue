@@ -98,7 +98,7 @@ const validateLogin = async () => {
     class="flex flex-row justify-center items-center h-screen"
     style="background-image: url('/login.svg')"
   >
-    <Card v-if="isLoading === false" style="width: 33rem" class="shadow-xl">
+    <Card v-if="isLoading === false" style="width: 33rem" class="shadow-xl backdrop-blur-xl bg-white/30">
       <template #title>
         <div class="text-2xl">Войти</div>
       </template>
@@ -133,7 +133,7 @@ const validateLogin = async () => {
         </div>
       </template>
     </Card>
-    <Card v-else style="width: 33rem" class="shadow-xl">
+    <Card v-else style="width: 33rem" class="shadow-xl backdrop-blur-xl bg-white/30">
       <template #content>
         <div class="flex flex-row justify-center w-full mt-8 mb-8">
           <div class="flex flex-col gap-4">
