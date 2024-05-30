@@ -2,6 +2,7 @@
 import Sidebar from './Sidebar.vue'
 import ContentPage from './ContentPage.vue'
 import MyJournal from './MyJournal.vue'
+import EducationalMaterial from './EducationMaterial.vue'
 import Dialog from 'primevue/dialog'
 import { ref } from 'vue'
 import Schedule from './Schedule.vue'
@@ -51,6 +52,7 @@ const signOut = async () => {
     <MyJournal v-if="pageName === 'Мой дневник' && !isLoading" :page-name="pageName" />
     <TeacherJournal v-if="pageName === 'Журнал' && !isLoading" :page-name="pageName" />
     <Schedule v-if="pageName === 'Расписание' && !isLoading" :page-name="pageName" />
+    <EducationalMaterial  v-if="pageName === 'Учебный материал' && !isLoading" :page-name="pageName" :success-level="profile.SuccessLevel" />
     <div v-if="isLoading" class="flex flex-col justify-center w-full m-6 gap-2">
       <div class="flex flex-col items-center gap-2">
         <div class="flex flex-row justify-center">

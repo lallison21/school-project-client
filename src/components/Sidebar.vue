@@ -69,6 +69,13 @@ const emit = defineEmits(['changePage', 'sign-out'])
             text
             @click="emit('changePage', 'Расписание')"
           />
+          <Button
+            label="Учебный материал"
+            icon="pi pi-desktop"
+            class="text-neutral-50 text-left"
+            text
+            @click="emit('changePage', 'Учебный материал')"
+          />
         </div>
       </template>
       <template #footer>
